@@ -1,0 +1,28 @@
+Create a shell script for the following
+
+1) Print the permissions of the folder whose path is given as input by the user.
+
+    step 1: Take path as input
+    step 2: if path is valid, print permission of the folder. else print a error message for the user
+
+2) Find the default shell of the account whose name is given as input by the user.
+    step 1: take username as input.
+    step 2: if username is valid,
+            a) find the entry of this user in the passwd file.
+            b) use awk to print the shell column from the passwd file (last column)
+
+            else
+                print error message for the user
+
+3) Find the size in bytes of the file whose path is given as input by the user.
+    step 1) take file path as input.
+    step 2) if path is valid for a regular file
+        a) use ls -l command to print all details of this file.
+        b) print the size column value from step (2 a) output.
+
+4) Print names of all blank files in the location given by the user.
+    step 1) take file path as input.
+    step 2) if path is valid for a regular file
+        a) use find command to list all files with 0 byte size and print their names.
+        else
+            print error message for the user.
