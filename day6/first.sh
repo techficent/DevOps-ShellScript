@@ -11,12 +11,24 @@
 
 #!/bin/bash
 
-
+#take input from user 
 read -p "Enter a path: " path
 
 if [[     -d  "$path"         ]]
 then
 	cp -rp "$path" /tmp/backups	
+
+	returnValue=$?
+
+	#if cp executed correctly, print success message else show error msg
+
+	if [[     "$returnValue" -eq 0             ]]
+	then
+		echo "copy successful"
+	else
+		echo "copy from $path location to /tmp/backups failed"
+	fi
+
 else
-	echo "cannot take backup. source or destination maybe invalid or permission must be denied"
+	echo "source or destination maybe invalid"
 fi
