@@ -1,4 +1,11 @@
-#example 2: Create a function to add 2 numbers given as input by the user
+#example 2: Create a function to add 2 numbers given as input by the user. Call this 
+#		function 3 times
+
+
+#one-time execution: direct
+#create a routine to be used on-demand at any time: function
+#repeated execution for fixed number of times: for loop
+
 
 #!/bin/bash
 
@@ -14,7 +21,10 @@ addition(){
 	echo "Addition of $firstNumber and $secondNumber is $((  $firstNumber + $secondNumber   ))"
 }
 
-addition
+for (( i=1;i<=3;i++  ))
+do
+	addition
+done
 
 
 #coder : who can write code

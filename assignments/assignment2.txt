@@ -1,0 +1,24 @@
+Question 1: Write a program using to print the square of a number passed as a parameter to the function
+
+Question 2: Create a function that takes array as an argument. Print the largest number from this array from inside the function
+
+Question 3: Create a function that takes a string as an argument and prints whether string is palindrome or not palindrome
+
+Question 4: Create a function that calculates the factorial of positive numbers between 1 to 12
+
+Question 5: Create a function that takes a number as input and prints whether the number is prime or not prime
+
+Question 6: Create a function that accepts a value 'N' as function parameter. Print Fibonacci series up to N terms from this function
+
+Question 7: Create a function that takes array as an argument. Print the sum (total) of all number from this array from inside the function
+
+Question 8: Create a function that takes 2 number values as parameters. Print the sum of all numbers between given values from inside the function
+	e.g if 2 parameters are 5 and 8, output should be 5+6+7+8 = 26
+
+Question 9: Create a function that takes 2 number values as parameters. Print all PRIME numbers between given values from inside the function
+	e.g: If 2 parameters are 2 and 10, output should be
+			2
+			3
+			5
+			7
+Question 10: Create a function that takes an array as a parameter. Print all prime numbers from this array inside the function
