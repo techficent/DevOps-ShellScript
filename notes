@@ -1,0 +1,156 @@
+
+Virtual Machine:
+
+
+[SEPARATE SYSTEM]
+
+VIRTUAL MACHINE (VM)
+
+[BASH SHELL + VIM + DOCKER ]
+[UBUNTU OS]
+4GB RAM
+128GB SSD
+
+
+
+
+
+
+
+
+
+HARDWARE
+SERVER
+		512GB RAM
+		100 TB SSD
+
+
+
+
+
+
+
+container
+
+
+container1
+container2
+container3
+container4
+|
+|
+--
+[DOCKER]
+LINUX
+
+
+
+
+
+
+
+
+
+
+
+Machine Learning Model
+-----> PYTHON
+-----> Editor[VIM, VsCode, pycharm, DataSpell,etc]
+-----> libraries : sklearn, pandas, plotly
+
+i) Direct Install on Laptop (5-10%)
+pro:
+	easy to setup!
+con:
+    a) NOT PORTABLE
+
+(20-30%)
+ii) Virtual environment on my laptop using Python
+pro:
+	isolated setup for each project ON THE SAME LAPTOP!
+con:
+	a)space might be wasted due to install of similar versions
+	of softwares
+
+	b)NOT PORTABLE!
+
+
+[spoilt for choices]
+
+iii) VM machine can be setup
+
+pro:
+	a)separation of an entire environment!
+	b) VM IMAGE CAN BE PORTED TO A DIFFERENT system
+con:
+	a) system will be slow to boot
+	b) space wastage is a lot!
+
+iv) Use a development container based on Docker engine
+
+
+pro:
+	
+	i) Reuse base OS (HOST OS) environment can be reused
+	across separate containers
+	ii) portability is GREAT!
+	iii) can be started and stopped quickly!
+	
+con:
+	
+	
+	i) Cannot be used for virtualizing GUI applications*.
+	ii)still requires a middle layer (ENGINE)
+
+
+
+	rocket, podman, docker, etc!
+
+
+
+p1
+	project_1_setup:(python 3.8, sklearn 1.1, pandas 1.4)
+
+p2
+	project_2_setup:python 3.8, sklearn 1.2, pandas 1.5
+
+
+
+
+
+
+100 
+
+500 customer per second
+
+
+
+
+flipkart website
+
+(HTML,CSS, JAVASCRIPT-FRAMEWORK (REACT< ANGULAR)
+
+|
+|
+|
+Deployment team (SOURCE FILES/BUNDLE)
+
+http server!!! (APACHE , NGINX, TOMCAT)
+|
+|
+SRC-IMAGE[ source file/bundle, apache-image  ]
+		[     app-image      ]
+|
+|
+[CONTAINER1] [   CONTAINER2    ][CONTAINER3]
+^
+|
+|
+USER
+
+
+
+
+
+
+

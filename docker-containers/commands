@@ -1,0 +1,69 @@
+#to check docker version
+
+docker version
+
+#on linux: whether docker service is running?
+
+systemctl status docker
+
+#list of all images installed ?
+
+docker images
+
+#to check currently running containers?
+
+docker ps
+
+# to start a new container (without connecting to it)
+
+docker run <container-name>
+
+# to start a new container (by connecting to it)
+
+docker run -it <container-name> 
+
+#how to stop a running container
+
+### a) use container id
+### b) use container name
+
+# remove a container from ps list
+
+docker rm <container-name>
+
+OR
+
+docker rm <container-id>
+
+
+#remove an image form the system
+
+docker rmi <image-name>:<tag>
+
+#run containers in background without terminating it or connecting to it
+
+docker run -d  <image-name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CONTAINER[ ]
+|
+DOCKER
+|
+VM[  HARDWARE:  4GB, SSD: 50GB             ]
+|
+WINDOWS(SSD?)
+------------
+LAPTOP(ACTUAL MACHINE)
