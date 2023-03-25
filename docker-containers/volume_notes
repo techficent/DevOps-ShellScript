@@ -1,0 +1,11 @@
+docker run -it --mount source storage,target=/home/harshit/Desktop/TechFicentBatches/ShellScripting/docker_data ubuntu
+
+
+
+docker run -it \
+
+--mount  source storage,\
+target=/home/harshit/Desktop/TechFicentBatches/ShellScripting/docker_data\
+
+ubuntu
+

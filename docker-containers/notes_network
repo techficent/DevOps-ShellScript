@@ -1,0 +1,71 @@
+docker ps: status of all running containers
+
+docker ps -a : status of all containers (stopped/running) till the last cleared history
+
+docker images : shows all installed images
+
+docker pull <name>:<tag> : installs a new image with name and tag
+	e.g: docker pull nginx:latest
+
+docker network create -d <driver-name> <name> : new network is created
+	e.g: docker network create -d bridge mynetwork
+
+docker network ls : shows all network interfaces available for docker
+
+
+docker network inspect <name> : shows detailed information of network whose name is specified
+	e.g: docker network inspect mynetwork
+
+docker volume create -d <driver-name> <name> : creates a new volume with given driver
+	e.g: docker volume create -d local storage
+
+docker volume ls : shows all available volumes created for docker
+
+docker volume inspect <name> : shows detailed info for specified volume
+
+
+
+docker container create
+docker container run
+docker image create
+
+
+
+EXAMPLES OF LAUNCHING A NEW CONTAINER
+
+
+1) docker run <image-name>
+2) docker run -d <image-name> : runs new container in detached mode (background)
+3) docker run -it <image-name> : runs new container in interactive mode
+4) docker run -it --name <given-name>   <image> : runs container in interactive mode with given name
+5) docker run -it --network <network-name> <image> : runs container with connection to given network interface
+6) docker run -it --network <network-name> --name <given-name> <image>
+	runs container with given name and specified network in interactive mode
+
+7) docker run -it --network <network-name> --name <given-name> --mount source=<volume-driver>,target=<folder absolute path> <image>
+
+
+
+
+
+
+### scenarios 
+
+1) container is already running in interactive mode
+	a) you can stop the container
+	b) you can manually exit from the container
+
+2) container is already running BUT IN BACKGROUND (detach mode)
+	a) you can gain access to it using exec option
+	b) you can stop the container
+
+3) container is already stopped?
+
+	a) you can remove the container from history
+	b) you can start the container again
+
+
+
+
+
+
