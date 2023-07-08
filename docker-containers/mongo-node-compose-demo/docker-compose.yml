@@ -1,0 +1,29 @@
+version: '3'
+services:
+ mongo:
+  image: mongo
+  container_name: database_app
+  restart: always
+  ports:
+   - 27017:27017
+  volumes:
+   - /tmp/mongo:/data/db
+ app:
+  image: node:latest
+  container_name: node_app
+  restart: always
+  command: sh -c "yarn install && yarn start"
+  ports:
+    - 8000:8000
+  working_dir: /app
+  volumes:
+   - ./:/app #connect ./ (current folder) of my laptop with /app folder of the container
+  environment:
+   MYSQL_HOST: localhost
+   MYSQL_USER: root
+   MYSQL_PASSWORD:
+   MYSQL_DB: test
+   
+  
+
+

@@ -1,0 +1,5 @@
+# Take a name from the user which could also include wild cards like *
+# Take a location from the user 
+# Find the exact path of all files that match the input given by the user
+in the given location and its subdirectories
+

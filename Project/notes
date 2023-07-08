@@ -1,0 +1,22 @@
+Basics 
+
+	-current date and time
+	- logged in user name
+	- firewall status
+	- last boot time
+	- os-version
+	- RAM usage
+		-currently used
+		-Total
+	- hostname
+
+
+
+MAINSCRIPT
+
+
+T1		T2
+BASIC          ADVANCED
+
+	T3
+	DASHBOARD

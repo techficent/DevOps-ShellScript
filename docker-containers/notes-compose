@@ -1,0 +1,10 @@
+# arrange a container for mongo DB
+#############################################3
+
+
+# We will use a compose yml file to write configuration for this container along with NODE container's configuration
+
+# configure mongo DB container
+
+# RUN this container (check if it working or not)
+########################################################

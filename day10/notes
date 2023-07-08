@@ -1,0 +1,34 @@
+#debug a shell script
+
+If your script is not producing expected output or gives
+an issue in output, use debug
+
+
+1) Validate a script for syntax
+run script with -n option (noexec)
+It shows blank output if there is no error
+If there are errors, they are printed on the screen
+
+2) identify unset variables
+run script with -u option (unbound variable)
+It shows a statement if an unbound variable is found
+It executes statements till an unbound variables if found and stops on the line 
+with variable error
+
+3) use xtrace option
+
+	a) use in script directly with -x & +x
+		use it if you want to trace only a specific part of your code	
+	b) use with bash as bash -x <script name>
+		use it if you want to trace whole program
+
+4) use file descriptor for xtrace
+
+	create a file descriptor using BASH_XTRACEFD in the script
+	use it to copy xtrace output to a file
+
+5) execute some activity before every command in the script
+
+	use trap 'commands' DEBUG
+
+Note: pstree and sctrace command!
